@@ -15,7 +15,7 @@ driver = webdriver.Chrome(options=options)
 
 driver.get("https://www.nvidia.com/en-us/shop/geforce/gpu/?page=1&limit=9&locale=en-us&category=GPU&gpu=RTX%203080")
 
-a = driver.find_element_by_xpath("//a[@id='resultsDiv']/div/div[1]/div[2]/div[3]/div[2]/div[1]")
+a = driver.find_element_by_xpath("//a[1]")
 
 buy_now = a.text
 print(buy_now)
